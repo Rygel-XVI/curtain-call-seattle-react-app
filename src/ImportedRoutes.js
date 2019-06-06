@@ -5,11 +5,11 @@ import DateSearch from './containers/DateSearch'
 import App from './App'
 
 const ImportedRoutes = () => (
-    <Router>
+  <div>
       <Route exact path="/home" component={App}/>
       <Route exact path="/theater" component={TheaterList}/>
       <Route exact path="/date" component={DateSearch}/>
-    </Router>
+      </div>
 );
 
 export default ImportedRoutes;
