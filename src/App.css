@@ -4,6 +4,10 @@ body {
   width: 100%
 }
 
+#root {
+  width: 100%;
+}
+
 .App {
   text-align: center;
 }
@@ -14,4 +18,9 @@ body {
 
 .navlink {
   padding: 2%;
+}
+
+.theater-button {
+  padding: 0.5%;
+  margin: 1%;
 }

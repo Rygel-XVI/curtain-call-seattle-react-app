@@ -41,8 +41,7 @@ class App extends Component {
       </React.Fragment>
       <Nav />
       <p>App Component!</p>
-      <p>add update/rescrape website button</p>
-      <UpdateButtonContainer />
+      <UpdateButtonContainer theaters={this.state.theaters}/>
       </Router>
       </div>
     );
