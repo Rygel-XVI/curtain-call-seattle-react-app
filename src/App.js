@@ -32,16 +32,17 @@ class App extends Component {
     return (
       <div className="App">
       <Router>
+      <Nav />
+      <p>App Component!</p>
       <React.Fragment>
+      <UpdateButtonContainer theaters={this.state.theaters}/>
+
       <Switch>
       <Route exact path="/home" component={App}/>
       <Route exact path="/theater" component={TheaterList}/>
       <Route exact path="/date" component={DateSearch}/>
       </Switch>
       </React.Fragment>
-      <Nav />
-      <p>App Component!</p>
-      <UpdateButtonContainer theaters={this.state.theaters}/>
       </Router>
       </div>
     );
