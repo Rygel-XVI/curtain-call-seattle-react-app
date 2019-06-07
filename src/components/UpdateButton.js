@@ -6,7 +6,7 @@ import "react-awesome-button/dist/styles.css";
 
 const UpdateButton = ({theater}) => {
   return (
-    <button className="theater-button">{theater.name}</button>
+    <button className="theater-button">Update {theater.name}</button>
   );
 };
 

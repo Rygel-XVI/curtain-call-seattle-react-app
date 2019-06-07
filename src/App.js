@@ -35,12 +35,11 @@ class App extends Component {
       <Nav />
       <p>App Component!</p>
       <React.Fragment>
-      <UpdateButtonContainer theaters={this.state.theaters}/>
-
       <Switch>
       <Route exact path="/home" component={App}/>
-      <Route exact path="/theater" component={TheaterList}/>
-      <Route exact path="/date" component={DateSearch}/>
+      <Route exact path="/theater"
+            render={() => <TheaterList theaters={this.state.theaters} />} />
+      <Route exact path="/date" component={DateSearch} theaters={this.state.theaters}/>
       </Switch>
       </React.Fragment>
       </Router>
@@ -48,5 +47,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;

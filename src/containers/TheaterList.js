@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import UpdateButtonContainer from './UpdateButtonContainer'
 
-const TheaterList = () => {
-  return (
-    <div className="theaterlist">
-      Theater Component
-    </div>
-  );
-};
+
+class TheaterList extends Component {
+
+  render() {
+    return (
+      <div>
+      <UpdateButtonContainer theaters={this.props.theaters}/>
+      </div>
+    )
+  }
+}
 
 export default TheaterList;
