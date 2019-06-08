@@ -4,7 +4,6 @@ import Nav from './containers/Nav'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import TheaterList from './containers/TheaterList'
 import DateSearch from './containers/DateSearch'
-import UpdateButtonContainer from './containers/UpdateButtonContainer'
 
 class App extends Component {
   constructor() {
