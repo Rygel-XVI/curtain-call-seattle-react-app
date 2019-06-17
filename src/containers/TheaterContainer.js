@@ -4,6 +4,22 @@ import DisplayShowsButton from './DisplayShowsButton'
 
 
 class TheaterContainer extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      name: '',
+      location: '',
+      last_updated: 'never',
+      shows: []
+    }
+
+    this.handleClick = this.handleClick.bind(this)
+  }
+
+  handleClick() {
+
+  }
 
   render() {
     return (

@@ -12,7 +12,7 @@ class UpdateButtonContainer extends Component {
   render() {
     return (
       <div>
-      UpdateButtonContainer
+      <button handleClick={this.props.handleClick}>Update Shows</button>
       </div>
     )
   }
