@@ -7,7 +7,7 @@ class TheaterContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="theater">
       <h2>{this.props.theater.name}</h2>
       <UpdateButtonContainer theater={this.props.theater}/>
       <DisplayShowsButton shows={this.props.theater.shows} />

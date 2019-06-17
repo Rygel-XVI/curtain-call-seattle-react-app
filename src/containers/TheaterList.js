@@ -12,7 +12,7 @@ class TheaterList extends Component {
 
   render() {
     return (
-      <div>
+      <div className='theater-list'>
       {this.renderTheaters()}
       </div>
     )
