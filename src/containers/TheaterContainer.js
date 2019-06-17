@@ -17,8 +17,15 @@ class TheaterContainer extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
+//add query to the dispatch so it scrapes and updates the theater
   handleClick() {
-
+    fetch("http://localhost:3000/theater.json")
+    .then(response => response.json())
+    .then(data => {
+      this.setState({
+        theaters: data
+      })
+    })
   }
 
   render() {
